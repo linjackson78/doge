@@ -19,7 +19,7 @@ define([], function() {
 				"dataType": "jsonp",
 				"client_id": "DdorykETWSiMXwQrGT1U",
 				"client_secret": "B4WCJ9KQ5HRDG8MeNHsFego2w7wHWCGb",
-				"redirect_uri": "http://localhost:3000/main/index.html",
+				"redirect_uri": "https://linjackson78.github.io/doge/main/index.html",
 				"access_token": this.getData("client") ? this.getData("client").access_token : "",
 			}
 			settings = settings ? settings : {};
