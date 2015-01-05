@@ -1,0 +1,17 @@
+ <div class='news-comment-li'>
+	<img class='comment-portrait' src='<%= commentPortrait %>'>
+	<div class="comment-li-header">
+		<span class='comment-author'><%= commentAuthor %>:</span>
+		<button class="comment-reply-btn btn btn-default" data-comment-author-id='<%= commentAuthorId %>' data-comment-id='<%= id %>' data-comment-author='<%= commentAuthor %>'>回复</button>
+	</div>
+	<div class='comment-content'>
+		<% if (refers.length != 0) { var _count =0; _.each(refers, function(obj){ _count++; if ( _count <4 ) { %>
+			<div class='comment-content-ref'> 
+			<% }}); var _count =0; _.each(refers, function(obj){ _count++; if ( _count <4 ) {%>
+			<div class='ref-title'><%= obj.refertitle %></div> <div class='ref-body'><%= obj.referbody %></div> </div>
+		<% }})} if (_count >= 4) {%>
+			<div>......</div>
+		<% } %>
+		<%= content %>
+	</div>
+</div>
