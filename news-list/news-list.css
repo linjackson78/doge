@@ -96,7 +96,7 @@ ul,li{
 }
 
 .news-list-scroller {
-	position: absolute;
+	position: relative;
 }
 
 .news-list-content {
